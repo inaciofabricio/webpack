@@ -18,7 +18,8 @@ plugins.push(
     })
 );
 
-if(process.env.NODE_ENV == 'production') {
+if(process.env.NODE_ENV == 'production') { 
+    
     plugins.push(new babiliPlugin());
 
     plugins.push(new optimizeCSSAssetsPlugin({
